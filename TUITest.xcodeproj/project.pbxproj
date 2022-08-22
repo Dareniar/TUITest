@@ -11,20 +11,22 @@
 		CE70C11628B3BEEF00451A6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70C11528B3BEEF00451A6B /* ContentView.swift */; };
 		CE70C11828B3BEF000451A6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE70C11728B3BEF000451A6B /* Assets.xcassets */; };
 		CE70C11B28B3BEF000451A6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE70C11A28B3BEF000451A6B /* Preview Assets.xcassets */; };
-		CE70C12528B3BEF000451A6B /* TUITestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70C12428B3BEF000451A6B /* TUITestTests.swift */; };
-		CE70C12F28B3BEF000451A6B /* TUITestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70C12E28B3BEF000451A6B /* TUITestUITests.swift */; };
-		CE70C13128B3BEF000451A6B /* TUITestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70C13028B3BEF000451A6B /* TUITestUITestsLaunchTests.swift */; };
+		CE70C13F28B3C0C700451A6B /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70C13E28B3C0C700451A6B /* Network.swift */; };
+		CE70C14228B3C17900451A6B /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70C14128B3C17900451A6B /* Request.swift */; };
+		CE70C14428B3C2AF00451A6B /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70C14328B3C2AF00451A6B /* APIError.swift */; };
+		CE70C14828B3C4E700451A6B /* JSONDecoder+Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70C14728B3C4E700451A6B /* JSONDecoder+Publisher.swift */; };
+		CE70C14A28B3C5C500451A6B /* NetworkManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70C14928B3C5C500451A6B /* NetworkManagerMock.swift */; };
+		CE70C15128B3CC7700451A6B /* ConnectionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70C15028B3CC7700451A6B /* ConnectionResponse.swift */; };
+		CE70C15328B3CF1A00451A6B /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70C15228B3CF1A00451A6B /* City.swift */; };
+		CE70C15528B3CF6A00451A6B /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70C15428B3CF6A00451A6B /* Coordinates.swift */; };
+		CE70C15728B3CF7C00451A6B /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70C15628B3CF7C00451A6B /* Route.swift */; };
+		CE70C17028B3D26600451A6B /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70C16F28B3D26600451A6B /* NetworkTests.swift */; };
+		CE70C17728B3E15900451A6B /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70C17628B3E15900451A6B /* TestData.swift */; };
+		CE70C17A28B3E22900451A6B /* RoutesExtractTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70C17928B3E22900451A6B /* RoutesExtractTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CE70C12128B3BEF000451A6B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CE70C10828B3BEEF00451A6B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CE70C10F28B3BEEF00451A6B;
-			remoteInfo = TUITest;
-		};
-		CE70C12B28B3BEF000451A6B /* PBXContainerItemProxy */ = {
+		CE70C17128B3D26600451A6B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CE70C10828B3BEEF00451A6B /* Project object */;
 			proxyType = 1;
@@ -39,11 +41,19 @@
 		CE70C11528B3BEEF00451A6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE70C11728B3BEF000451A6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE70C11A28B3BEF000451A6B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		CE70C12028B3BEF000451A6B /* TUITestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TUITestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE70C12428B3BEF000451A6B /* TUITestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TUITestTests.swift; sourceTree = "<group>"; };
-		CE70C12A28B3BEF000451A6B /* TUITestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TUITestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE70C12E28B3BEF000451A6B /* TUITestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TUITestUITests.swift; sourceTree = "<group>"; };
-		CE70C13028B3BEF000451A6B /* TUITestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TUITestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE70C13E28B3C0C700451A6B /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		CE70C14128B3C17900451A6B /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		CE70C14328B3C2AF00451A6B /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		CE70C14728B3C4E700451A6B /* JSONDecoder+Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Publisher.swift"; sourceTree = "<group>"; };
+		CE70C14928B3C5C500451A6B /* NetworkManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerMock.swift; sourceTree = "<group>"; };
+		CE70C15028B3CC7700451A6B /* ConnectionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionResponse.swift; sourceTree = "<group>"; };
+		CE70C15228B3CF1A00451A6B /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		CE70C15428B3CF6A00451A6B /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
+		CE70C15628B3CF7C00451A6B /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		CE70C16D28B3D26600451A6B /* TUITestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TUITestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE70C16F28B3D26600451A6B /* NetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
+		CE70C17628B3E15900451A6B /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		CE70C17928B3E22900451A6B /* RoutesExtractTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesExtractTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE70C11D28B3BEF000451A6B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE70C12728B3BEF000451A6B /* Frameworks */ = {
+		CE70C16A28B3D26600451A6B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -75,8 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				CE70C11228B3BEEF00451A6B /* TUITest */,
-				CE70C12328B3BEF000451A6B /* TUITestTests */,
-				CE70C12D28B3BEF000451A6B /* TUITestUITests */,
+				CE70C16E28B3D26600451A6B /* TUITestTests */,
 				CE70C11128B3BEEF00451A6B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,8 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				CE70C11028B3BEEF00451A6B /* TUITest.app */,
-				CE70C12028B3BEF000451A6B /* TUITestTests.xctest */,
-				CE70C12A28B3BEF000451A6B /* TUITestUITests.xctest */,
+				CE70C16D28B3D26600451A6B /* TUITestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,6 +97,8 @@
 			children = (
 				CE70C11328B3BEEF00451A6B /* TUITestApp.swift */,
 				CE70C11528B3BEEF00451A6B /* ContentView.swift */,
+				CE70C14028B3C16900451A6B /* API */,
+				CE70C14628B3C4D300451A6B /* Extensions */,
 				CE70C11728B3BEF000451A6B /* Assets.xcassets */,
 				CE70C11928B3BEF000451A6B /* Preview Content */,
 			);
@@ -110,21 +113,61 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		CE70C12328B3BEF000451A6B /* TUITestTests */ = {
+		CE70C13D28B3BF3900451A6B /* NetworkManager */ = {
 			isa = PBXGroup;
 			children = (
-				CE70C12428B3BEF000451A6B /* TUITestTests.swift */,
+				CE70C13E28B3C0C700451A6B /* Network.swift */,
+				CE70C14928B3C5C500451A6B /* NetworkManagerMock.swift */,
 			);
-			path = TUITestTests;
+			path = NetworkManager;
 			sourceTree = "<group>";
 		};
-		CE70C12D28B3BEF000451A6B /* TUITestUITests */ = {
+		CE70C14028B3C16900451A6B /* API */ = {
 			isa = PBXGroup;
 			children = (
-				CE70C12E28B3BEF000451A6B /* TUITestUITests.swift */,
-				CE70C13028B3BEF000451A6B /* TUITestUITestsLaunchTests.swift */,
+				CE70C13D28B3BF3900451A6B /* NetworkManager */,
+				CE70C14E28B3CC1D00451A6B /* Models */,
 			);
-			path = TUITestUITests;
+			path = API;
+			sourceTree = "<group>";
+		};
+		CE70C14628B3C4D300451A6B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE70C14728B3C4E700451A6B /* JSONDecoder+Publisher.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CE70C14E28B3CC1D00451A6B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE70C14128B3C17900451A6B /* Request.swift */,
+				CE70C14328B3C2AF00451A6B /* APIError.swift */,
+				CE70C14F28B3CC6A00451A6B /* Responses */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE70C14F28B3CC6A00451A6B /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				CE70C15028B3CC7700451A6B /* ConnectionResponse.swift */,
+				CE70C15228B3CF1A00451A6B /* City.swift */,
+				CE70C15628B3CF7C00451A6B /* Route.swift */,
+				CE70C15428B3CF6A00451A6B /* Coordinates.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		CE70C16E28B3D26600451A6B /* TUITestTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE70C16F28B3D26600451A6B /* NetworkTests.swift */,
+				CE70C17928B3E22900451A6B /* RoutesExtractTests.swift */,
+				CE70C17628B3E15900451A6B /* TestData.swift */,
+			);
+			path = TUITestTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,41 +190,23 @@
 			productReference = CE70C11028B3BEEF00451A6B /* TUITest.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CE70C11F28B3BEF000451A6B /* TUITestTests */ = {
+		CE70C16C28B3D26600451A6B /* TUITestTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE70C13728B3BEF000451A6B /* Build configuration list for PBXNativeTarget "TUITestTests" */;
+			buildConfigurationList = CE70C17328B3D26600451A6B /* Build configuration list for PBXNativeTarget "TUITestTests" */;
 			buildPhases = (
-				CE70C11C28B3BEF000451A6B /* Sources */,
-				CE70C11D28B3BEF000451A6B /* Frameworks */,
-				CE70C11E28B3BEF000451A6B /* Resources */,
+				CE70C16928B3D26600451A6B /* Sources */,
+				CE70C16A28B3D26600451A6B /* Frameworks */,
+				CE70C16B28B3D26600451A6B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CE70C12228B3BEF000451A6B /* PBXTargetDependency */,
+				CE70C17228B3D26600451A6B /* PBXTargetDependency */,
 			);
 			name = TUITestTests;
 			productName = TUITestTests;
-			productReference = CE70C12028B3BEF000451A6B /* TUITestTests.xctest */;
+			productReference = CE70C16D28B3D26600451A6B /* TUITestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		CE70C12928B3BEF000451A6B /* TUITestUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CE70C13A28B3BEF000451A6B /* Build configuration list for PBXNativeTarget "TUITestUITests" */;
-			buildPhases = (
-				CE70C12628B3BEF000451A6B /* Sources */,
-				CE70C12728B3BEF000451A6B /* Frameworks */,
-				CE70C12828B3BEF000451A6B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CE70C12C28B3BEF000451A6B /* PBXTargetDependency */,
-			);
-			name = TUITestUITests;
-			productName = TUITestUITests;
-			productReference = CE70C12A28B3BEF000451A6B /* TUITestUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -196,11 +221,7 @@
 					CE70C10F28B3BEEF00451A6B = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
-					CE70C11F28B3BEF000451A6B = {
-						CreatedOnToolsVersion = 13.4.1;
-						TestTargetID = CE70C10F28B3BEEF00451A6B;
-					};
-					CE70C12928B3BEF000451A6B = {
+					CE70C16C28B3D26600451A6B = {
 						CreatedOnToolsVersion = 13.4.1;
 						TestTargetID = CE70C10F28B3BEEF00451A6B;
 					};
@@ -220,8 +241,7 @@
 			projectRoot = "";
 			targets = (
 				CE70C10F28B3BEEF00451A6B /* TUITest */,
-				CE70C11F28B3BEF000451A6B /* TUITestTests */,
-				CE70C12928B3BEF000451A6B /* TUITestUITests */,
+				CE70C16C28B3D26600451A6B /* TUITestTests */,
 			);
 		};
 /* End PBXProject section */
@@ -236,14 +256,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE70C11E28B3BEF000451A6B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE70C12828B3BEF000451A6B /* Resources */ = {
+		CE70C16B28B3D26600451A6B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -258,39 +271,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE70C11628B3BEEF00451A6B /* ContentView.swift in Sources */,
+				CE70C14A28B3C5C500451A6B /* NetworkManagerMock.swift in Sources */,
+				CE70C15728B3CF7C00451A6B /* Route.swift in Sources */,
+				CE70C15328B3CF1A00451A6B /* City.swift in Sources */,
+				CE70C15128B3CC7700451A6B /* ConnectionResponse.swift in Sources */,
+				CE70C14228B3C17900451A6B /* Request.swift in Sources */,
 				CE70C11428B3BEEF00451A6B /* TUITestApp.swift in Sources */,
+				CE70C14828B3C4E700451A6B /* JSONDecoder+Publisher.swift in Sources */,
+				CE70C14428B3C2AF00451A6B /* APIError.swift in Sources */,
+				CE70C13F28B3C0C700451A6B /* Network.swift in Sources */,
+				CE70C15528B3CF6A00451A6B /* Coordinates.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE70C11C28B3BEF000451A6B /* Sources */ = {
+		CE70C16928B3D26600451A6B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE70C12528B3BEF000451A6B /* TUITestTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE70C12628B3BEF000451A6B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE70C12F28B3BEF000451A6B /* TUITestUITests.swift in Sources */,
-				CE70C13128B3BEF000451A6B /* TUITestUITestsLaunchTests.swift in Sources */,
+				CE70C17028B3D26600451A6B /* NetworkTests.swift in Sources */,
+				CE70C17A28B3E22900451A6B /* RoutesExtractTests.swift in Sources */,
+				CE70C17728B3E15900451A6B /* TestData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CE70C12228B3BEF000451A6B /* PBXTargetDependency */ = {
+		CE70C17228B3D26600451A6B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CE70C10F28B3BEEF00451A6B /* TUITest */;
-			targetProxy = CE70C12128B3BEF000451A6B /* PBXContainerItemProxy */;
-		};
-		CE70C12C28B3BEF000451A6B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CE70C10F28B3BEEF00451A6B /* TUITest */;
-			targetProxy = CE70C12B28B3BEF000451A6B /* PBXContainerItemProxy */;
+			targetProxy = CE70C17128B3D26600451A6B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -329,6 +339,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -389,6 +400,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -467,16 +479,14 @@
 			};
 			name = Release;
 		};
-		CE70C13828B3BEF000451A6B /* Debug */ = {
+		CE70C17428B3D26600451A6B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FBFE6N5K5V;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dareniar.TUITestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -487,16 +497,14 @@
 			};
 			name = Debug;
 		};
-		CE70C13928B3BEF000451A6B /* Release */ = {
+		CE70C17528B3D26600451A6B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FBFE6N5K5V;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dareniar.TUITestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -504,42 +512,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TUITest.app/TUITest";
-			};
-			name = Release;
-		};
-		CE70C13B28B3BEF000451A6B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FBFE6N5K5V;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dareniar.TUITestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TUITest;
-			};
-			name = Debug;
-		};
-		CE70C13C28B3BEF000451A6B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FBFE6N5K5V;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dareniar.TUITestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TUITest;
 			};
 			name = Release;
 		};
@@ -564,20 +536,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE70C13728B3BEF000451A6B /* Build configuration list for PBXNativeTarget "TUITestTests" */ = {
+		CE70C17328B3D26600451A6B /* Build configuration list for PBXNativeTarget "TUITestTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CE70C13828B3BEF000451A6B /* Debug */,
-				CE70C13928B3BEF000451A6B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CE70C13A28B3BEF000451A6B /* Build configuration list for PBXNativeTarget "TUITestUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CE70C13B28B3BEF000451A6B /* Debug */,
-				CE70C13C28B3BEF000451A6B /* Release */,
+				CE70C17428B3D26600451A6B /* Debug */,
+				CE70C17528B3D26600451A6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
