@@ -34,6 +34,7 @@
 		CED0C3E628B4FA14003457CC /* SearchRouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED0C3E528B4FA14003457CC /* SearchRouteView.swift */; };
 		CED0C3E928B502A8003457CC /* SelectCityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED0C3E828B502A8003457CC /* SelectCityView.swift */; };
 		CED0C3ED28B51FBD003457CC /* SelectCityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED0C3EC28B51FBD003457CC /* SelectCityViewModel.swift */; };
+		CED0C3EF28B546EB003457CC /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED0C3EE28B546EB003457CC /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		CED0C3E528B4FA14003457CC /* SearchRouteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouteView.swift; sourceTree = "<group>"; };
 		CED0C3E828B502A8003457CC /* SelectCityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCityView.swift; sourceTree = "<group>"; };
 		CED0C3EC28B51FBD003457CC /* SelectCityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCityViewModel.swift; sourceTree = "<group>"; };
+		CED0C3EE28B546EB003457CC /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +231,7 @@
 			children = (
 				CED0C3E528B4FA14003457CC /* SearchRouteView.swift */,
 				CEC2B4EB28B4ED1800C70A17 /* SearchRouteViewModel.swift */,
+				CED0C3EE28B546EB003457CC /* MapView.swift */,
 			);
 			path = "Search Route";
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				CE70C14A28B3C5C500451A6B /* NetworkManagerMock.swift in Sources */,
 				CEC2B4DF28B4D4E700C70A17 /* Edge.swift in Sources */,
 				CE70C15728B3CF7C00451A6B /* Route.swift in Sources */,
+				CED0C3EF28B546EB003457CC /* MapView.swift in Sources */,
 				CEC2B4D828B4C45F00C70A17 /* RouteFinder.swift in Sources */,
 				CEC2B4E428B4DEAD00C70A17 /* PriorityQueue.swift in Sources */,
 				CE70C15328B3CF1A00451A6B /* City.swift in Sources */,
@@ -527,6 +531,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -556,6 +561,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

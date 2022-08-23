@@ -19,9 +19,16 @@ struct SearchRouteView: View {
       fromTextField
       toTextField
       searchButton
-      Spacer()
+      if viewModel.priceText != nil {
+        priceText
+      }
+      if let path = viewModel.path {
+        MapView(route: path)
+      } else {
+        Spacer()
+      }
     }
-    .padding()
+    .edgesIgnoringSafeArea(.bottom)
     .alert(isPresented: $viewModel.showError) {
       errorAlert
     }
@@ -41,6 +48,7 @@ private extension SearchRouteView {
           SelectCityView(selection: $viewModel.fromCity, cities: viewModel.cities)
         }
     }
+    .padding([.top, .horizontal])
     .contentShape(Rectangle())
     .onTapGesture {
       viewModel.showFromCityPopup = true
@@ -58,6 +66,7 @@ private extension SearchRouteView {
           SelectCityView(selection: $viewModel.toCity, cities: viewModel.cities)
         }
     }
+    .padding(.horizontal)
     .contentShape(Rectangle())
     .onTapGesture {
       viewModel.showToCityPopup = true
@@ -67,12 +76,22 @@ private extension SearchRouteView {
   var searchButton: some View {
     Button {
       viewModel.searchPath()
-      print(viewModel.path)
     } label: {
       Text("Search the cheapest route")
     }
     .buttonStyle(.borderedProminent)
     .disabled(!viewModel.isSearchAvailable)
+  }
+  
+  var priceText: some View {
+    Text("The cheapest flight for the selected route will cost you \(viewModel.priceText ?? "").")
+      .font(.subheadline)
+      .fontWeight(.semibold)
+      .padding()
+      .overlay(
+        RoundedRectangle(cornerRadius: 10).stroke(.blue, lineWidth: 4)
+      )
+      .cornerRadius(10)
   }
   
   var errorAlert: Alert {

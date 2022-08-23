@@ -30,7 +30,7 @@ final class SearchRouteViewModel: ObservableObject {
   @Published var toCityText = ""
   @Published var fromCityText = ""
   
-  @Published private(set) var price: Double?
+  @Published private(set) var priceText: String?
   @Published private(set) var path: [City]?
   
   private(set) var isSearchAvailable = false
@@ -78,12 +78,21 @@ final class SearchRouteViewModel: ObservableObject {
     }
     
     let routeFinder = RouteFinder(cities: cities, routes: routes)
+    
+    var price: Double?
     (price, path) = routeFinder.findCheapestFlight(from: fromCity, to: toCity)
     
-    if price == nil || path == nil {
+    guard let price = price, path != nil else {
       error = .search(description: "Ooops... For selected source and destination we can't find any flights :(")
       showError = true
+      return
     }
+
+    let priceFormatter = NumberFormatter()
+    priceFormatter.numberStyle = .currency
+    priceFormatter.currencySymbol = "$"
+    priceFormatter.decimalSeparator = "."
+    priceText = priceFormatter.string(from: price as NSNumber)
   }
   
   // MARK: - Private Methods
@@ -98,5 +107,8 @@ final class SearchRouteViewModel: ObservableObject {
     
     showToCityPopup = false
     showFromCityPopup = false
+    
+    priceText = nil
+    path = nil
   }
 }
