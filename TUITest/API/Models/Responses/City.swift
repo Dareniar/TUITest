@@ -11,3 +11,9 @@ struct City: Hashable {
   let name: String
   let coordinates: Coordinates
 }
+
+extension City: VertexConvertible {
+  func toVertex() -> Vertex<City> {
+    Vertex(self)
+  }
+}
