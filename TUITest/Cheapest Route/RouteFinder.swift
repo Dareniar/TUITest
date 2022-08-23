@@ -17,7 +17,7 @@ protocol RouteFindable {
   ///   - from: Source city
   ///   - to: Destination city
   /// - Returns: A tuple which contains of price of the cheapest route and array of transit cities
-  func findCheapestFlight(from: City, to: City) -> (Double, [City]?)
+  func findCheapestFlight(from: City, to: City) -> (Double?, [City]?)
 }
 
 final class RouteFinder: RouteFindable {
@@ -32,12 +32,12 @@ final class RouteFinder: RouteFindable {
     setupGraph()
   }
   
-  func findCheapestFlight(from: City, to: City) -> (Double, [City]?) {
+  func findCheapestFlight(from: City, to: City) -> (Double?, [City]?) {
     guard
       let source = graph.vertex(for: from),
       let destination = graph.vertex(for: to)
     else {
-      return (Double.infinity, nil)
+      return (nil, nil)
     }
     
     let dijkstra = Dijkstra(graph: graph, source: source)
@@ -45,7 +45,7 @@ final class RouteFinder: RouteFindable {
     if let path = dijkstra.path(to: destination) {
       return (price, path.map { $0.value })
     } else {
-      return (price, nil)
+      return (nil, nil)
     }
   }
   

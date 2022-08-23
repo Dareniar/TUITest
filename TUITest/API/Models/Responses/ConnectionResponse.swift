@@ -21,7 +21,10 @@ struct ConnectionsResponse: Decodable, Equatable {
       cities.update(with: route.toCity)
       routes.update(with: route)
     }
-    return (Array(cities), Array(routes))
+    return (
+      Array(cities).sorted(by: { $0.name.lowercased() < $1.name.lowercased() }),
+      Array(routes)
+    )
   }
 }
 

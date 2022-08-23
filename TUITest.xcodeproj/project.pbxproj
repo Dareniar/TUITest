@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CE70C11428B3BEEF00451A6B /* TUITestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70C11328B3BEEF00451A6B /* TUITestApp.swift */; };
-		CE70C11628B3BEEF00451A6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70C11528B3BEEF00451A6B /* ContentView.swift */; };
 		CE70C11828B3BEF000451A6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE70C11728B3BEF000451A6B /* Assets.xcassets */; };
 		CE70C11B28B3BEF000451A6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE70C11A28B3BEF000451A6B /* Preview Assets.xcassets */; };
 		CE70C13F28B3C0C700451A6B /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70C13E28B3C0C700451A6B /* Network.swift */; };
@@ -31,6 +30,10 @@
 		CEC2B4E428B4DEAD00C70A17 /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2B4E328B4DEAD00C70A17 /* PriorityQueue.swift */; };
 		CEC2B4E628B4E1D800C70A17 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2B4E528B4E1D800C70A17 /* Destination.swift */; };
 		CEC2B4E828B4E2EE00C70A17 /* Dijkstra.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2B4E728B4E2EE00C70A17 /* Dijkstra.swift */; };
+		CEC2B4EC28B4ED1800C70A17 /* SearchRouteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2B4EB28B4ED1800C70A17 /* SearchRouteViewModel.swift */; };
+		CED0C3E628B4FA14003457CC /* SearchRouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED0C3E528B4FA14003457CC /* SearchRouteView.swift */; };
+		CED0C3E928B502A8003457CC /* SelectCityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED0C3E828B502A8003457CC /* SelectCityView.swift */; };
+		CED0C3ED28B51FBD003457CC /* SelectCityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED0C3EC28B51FBD003457CC /* SelectCityViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +49,6 @@
 /* Begin PBXFileReference section */
 		CE70C11028B3BEEF00451A6B /* TUITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TUITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE70C11328B3BEEF00451A6B /* TUITestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TUITestApp.swift; sourceTree = "<group>"; };
-		CE70C11528B3BEEF00451A6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE70C11728B3BEF000451A6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE70C11A28B3BEF000451A6B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE70C13E28B3C0C700451A6B /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
@@ -70,6 +72,10 @@
 		CEC2B4E328B4DEAD00C70A17 /* PriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityQueue.swift; sourceTree = "<group>"; };
 		CEC2B4E528B4E1D800C70A17 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 		CEC2B4E728B4E2EE00C70A17 /* Dijkstra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dijkstra.swift; sourceTree = "<group>"; };
+		CEC2B4EB28B4ED1800C70A17 /* SearchRouteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouteViewModel.swift; sourceTree = "<group>"; };
+		CED0C3E528B4FA14003457CC /* SearchRouteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouteView.swift; sourceTree = "<group>"; };
+		CED0C3E828B502A8003457CC /* SelectCityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCityView.swift; sourceTree = "<group>"; };
+		CED0C3EC28B51FBD003457CC /* SelectCityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCityViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				CE70C11328B3BEEF00451A6B /* TUITestApp.swift */,
-				CEC2B4E928B4EBCC00C70A17 /* UI */,
+				CED0C3EA28B51F64003457CC /* UI */,
 				CEC2B4D628B4C42F00C70A17 /* Cheapest Route */,
 				CE70C14028B3C16900451A6B /* API */,
 				CE70C14628B3C4D300451A6B /* Extensions */,
@@ -218,12 +224,31 @@
 			path = Dijkstra;
 			sourceTree = "<group>";
 		};
-		CEC2B4E928B4EBCC00C70A17 /* UI */ = {
+		CEC2B4EA28B4ECF700C70A17 /* Search Route */ = {
 			isa = PBXGroup;
 			children = (
-				CE70C11528B3BEEF00451A6B /* ContentView.swift */,
+				CED0C3E528B4FA14003457CC /* SearchRouteView.swift */,
+				CEC2B4EB28B4ED1800C70A17 /* SearchRouteViewModel.swift */,
+			);
+			path = "Search Route";
+			sourceTree = "<group>";
+		};
+		CED0C3EA28B51F64003457CC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CEC2B4EA28B4ECF700C70A17 /* Search Route */,
+				CED0C3EB28B51F73003457CC /* Select City */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		CED0C3EB28B51F73003457CC /* Select City */ = {
+			isa = PBXGroup;
+			children = (
+				CED0C3E828B502A8003457CC /* SelectCityView.swift */,
+				CED0C3EC28B51FBD003457CC /* SelectCityViewModel.swift */,
+			);
+			path = "Select City";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,14 +351,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE70C11628B3BEEF00451A6B /* ContentView.swift in Sources */,
 				CE70C14A28B3C5C500451A6B /* NetworkManagerMock.swift in Sources */,
 				CEC2B4DF28B4D4E700C70A17 /* Edge.swift in Sources */,
 				CE70C15728B3CF7C00451A6B /* Route.swift in Sources */,
 				CEC2B4D828B4C45F00C70A17 /* RouteFinder.swift in Sources */,
 				CEC2B4E428B4DEAD00C70A17 /* PriorityQueue.swift in Sources */,
 				CE70C15328B3CF1A00451A6B /* City.swift in Sources */,
+				CEC2B4EC28B4ED1800C70A17 /* SearchRouteViewModel.swift in Sources */,
 				CE70C15128B3CC7700451A6B /* ConnectionResponse.swift in Sources */,
+				CED0C3ED28B51FBD003457CC /* SelectCityViewModel.swift in Sources */,
+				CED0C3E928B502A8003457CC /* SelectCityView.swift in Sources */,
 				CEC2B4E628B4E1D800C70A17 /* Destination.swift in Sources */,
 				CE70C14228B3C17900451A6B /* Request.swift in Sources */,
 				CEC2B4DD28B4D3DA00C70A17 /* Vertex.swift in Sources */,
@@ -341,6 +368,7 @@
 				CE70C11428B3BEEF00451A6B /* TUITestApp.swift in Sources */,
 				CE70C14828B3C4E700451A6B /* JSONDecoder+Publisher.swift in Sources */,
 				CE70C14428B3C2AF00451A6B /* APIError.swift in Sources */,
+				CED0C3E628B4FA14003457CC /* SearchRouteView.swift in Sources */,
 				CE70C13F28B3C0C700451A6B /* Network.swift in Sources */,
 				CE70C15528B3CF6A00451A6B /* Coordinates.swift in Sources */,
 				CEC2B4E828B4E2EE00C70A17 /* Dijkstra.swift in Sources */,
